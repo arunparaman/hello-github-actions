@@ -12,3 +12,4 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "Nike"
+      - run: echo This is a secret ${{ secrets.MY_SECRET }}
