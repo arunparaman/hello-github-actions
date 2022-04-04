@@ -13,3 +13,12 @@ jobs:
         with:
           MY_NAME: "Nike"
       - run: echo This is a secret ${{ secrets.MY_SECRET }}
+      
+  devDeploy:
+     runs-on: ubuntu-latest
+     environment:
+       name: DEV
+       
+     steps:
+       - run: echo Welcome to Dev
+  
